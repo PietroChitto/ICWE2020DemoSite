@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame. Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Bot Navigator - Prgresses</title>
+	<meta name="description" content="In this page there are the progresses of the project ordered in a chronological
+	order" />
+	<meta name="author" content="Pietro Chittò" />
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+</head>
+
+
+<body>
+	
+	<div id="navigation">
+		<ul id="menu">
+			<li><a bot-intent="index_link" bot-intent-desc="go to the home page" bot-type="link" bot-keys="home, home page" href="index.html">Home</a></li>
+			<li><a href="project.html">Project progresses</a></li>
+			<li><a bot-intent="researcher_link" bot-intent-desc="tell you the some information about the researcher" bot-type="link" href="researcher.html" bot-keys="researcher, workers, contributors">About us</a></li>
+		</ul>
+	</div>
+
+	<a name="phases-info">
+	<div id="container" bot-intent = "phases_info" bot-type="reader" bot-keys="phases, steps" bot-intent-desc="Tell you the step of the project">
+		<h1 bot-attribute=title>Project progresses</h1>
+		<div bot-attribute="list">
+			<p bot-attribute="list-item"><strong>March 2019:</strong> Start of the Project</p>
+			<p bot-attribute="list-item"><strong>April 2019:</strong> Definition of the architecture of the system</p>
+			<p bot-attribute="list-item"><strong>July 2019:</strong> Definition of the softwere technologies for the implementation phase</p>
+			<p bot-attribute="list-item"><strong>September 2019:</strong> Start of implementation phase</p>
+		</div>
+	</div>
+	</a>
+
+</body>
+
+</html>

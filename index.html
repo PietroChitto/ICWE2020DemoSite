@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame. Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Bot Navigator</title>
+	<meta name="description" content="Bot Navigator home page" />
+	<meta name="author" content="Pietro Chittò" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+</head>
+
+
+<body>
+
+	<div id="body">
+	
+		<div id="navigation">
+			<ul id="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a bot-intent="progresses_link" bot-intent-desc="tell you the phases of the project" bot-type="link" bot-keys="phases, steps" href="project.html?">Project progresses</a></li>
+				<li><a bot-intent="researcher_link" bot-intent-desc="tell you the some information about the researcher" bot-type="link" bot-keys="researcher, workers, contributors" href="researcher.html">About us</a></li>
+			</ul>
+		</div>
+
+		<div id="container" bot-intent="project_info" bot-intent-desc="Tell you information about the project" bot-keys="info, information, info of the project, info about the project">
+			
+			<div bot-intent="project_info_gol" bot-type="reader" bot-intent-desc="tell you the gol of the project" bot-keys="goal">
+				<h1 bot-attribute="title">Title of the paper</h1>
+				<p bot-attribute="paragraph">Automatic Generation of Chatbots for Conversational Web Browsing
+				</p>
+			</div>
+
+			<div bot-intent="project_info_topics" bot-type="reader" bot-intent-desc="tell you the topics of the project" bot-keys="topics">
+				<h1 bot-attribute="title">Topics</h1>
+				<p bot-attribute="paragraph">Non-visual browsing and Conversational agents and Chatbot generation and Hierarchical chatbots</p>
+			</div>
+
+			<div bot-intent="project_info_other" bot-type="reader" bot-intent-desc="tell you other information about the project" bot-keys="other info, other information">
+				<h1 bot-attribute="title">Abstract</h1>
+				<p bot-attribute="paragraph">
+					This paper introduces what we call conversational web browsing, i.e., a dialog-based, natural language interaction with websites. The goal is to enable users to access content and functionality accessible through rendered UIs by ``talking to websites'' instead of by operating the graphical UI using keyboard and mouse. In this paper, we describe the foundations of our approach and show how to generate a chatbot out of a website equipped with simple, bot-specific HTML annotations. The chatbot mediates between the user and the website, operates its graphical UI on behalf of the user, and informs the user about the state of interaction. We describe the annotation format, the supporting conversational middleware, and the implementation of a demo able to deliver conversational web browsing experiences through Amazon Alexa. </p>
+			</div>
+
+		</div>
+		
+	</div>
+
+</body>
+
+</html>
