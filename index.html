@@ -24,29 +24,39 @@
 
 		<p id="navigation">
 				<a href="index.html">Home</a> |
-				<a bot-intent="progress_link" bot-intent-desc="Tell you the phases of the project" bot-type="link" bot-keys="phases, steps, progress" href="project.html?">Project progress</a> |
-				<a bot-intent="researcher_link" bot-intent-desc="Tell you some information about the researchers involved" bot-type="link" bot-keys="researchers, authors, contributors" href="researcher.html">About us</a>
+				<a bot-intent="progress" bot-intent-desc="Tell you the phases of the project" bot-type="link" bot-keys="phases, steps, progress" href="project.html?">Project progress</a> |
+				<a bot-intent="about" bot-intent-desc="Tell you some information about the researchers involved" bot-type="link" bot-keys="researchers, authors, contributors, team members" href="researcher.html">About us</a>
 		</p>
 
-		<div id="container" bot-intent="paper_info" bot-intent-desc="Tell you information about the paper" bot-keys="info, information, info of the project, info about the project, info about the paper">
+		<div id="container" bot-intent="lastest_paper" bot-intent-desc="Tell you information about the paper" bot-keys="lastest paper, last paper, paper">
+
+			<h1>Latest paper</h1>
 
 			<div bot-intent="paper_info_title" bot-type="reader" bot-intent-desc="Tell you the title of the paper" bot-keys="title">
-				<h1 bot-attribute="title">Title of paper</h1>
+				<h2 bot-attribute="title">Title of paper</h2>
 				<p bot-attribute="paragraph">Automatic Generation of Chatbots for Conversational Web Browsing
 				</p>
 			</div>
 
 			<div bot-intent="paper_info_topics" bot-type="reader" bot-intent-desc="Tell you the topics of the paper" bot-keys="topics">
-				<h1 bot-attribute="title">Topics</h1>
+				<h2 bot-attribute="title">Topics</h2>
 				<p bot-attribute="paragraph">Non-visual browsing, conversational agents, chatbot generation, hierarchical chatbots</p>
 			</div>
 
 			<div bot-intent="paper_info_abstract" bot-type="reader" bot-intent-desc="Tell you a summary of the paper" bot-keys="abstract, summary">
-				<h1 bot-attribute="title">Abstract</h1>
+				<h2 bot-attribute="title">Abstract</h2>
 				<p bot-attribute="paragraph">
 					This paper introduces what we call conversational web browsing, i.e., a dialog-based, natural language interaction with websites. The goal is to enable users to access content and functionality accessible through rendered UIs by "talking to websites" instead of by operating the graphical UI using keyboard and mouse. In this paper, we describe the foundations of our approach and show how to generate a chatbot out of a website equipped with simple, bot-specific HTML annotations. The chatbot mediates between the user and the website, operates its graphical UI on behalf of the user, and informs the user about the state of interaction. We describe the annotation format, the supporting conversational middleware, and the implementation of a demo able to deliver conversational web browsing experiences through Amazon Alexa. </p>
 			</div>
 
+		</div>
+
+		<div id="container" bot-intent="paper_list" bot-intent-desc="Tell you the list of papers published by the project" bot-keys="papers, list of papers, publications, list of publications">
+			<h1 bot-attribute="title">List of papers</h1>
+			<ul bot-attribute="list">
+				<li bot-attribute="list-item">P. Cittò, M. Baez, F. Daniel. Automatic Generation of Chatbots for Conversational Web Browsing. Submitted to ICWE 2020.</li>
+				<li bot-attribute="list-item">M. Baez, F. Daniel, F. Casati. Conversational Web Interaction: Proposal of a Dialog-Based Natural Language Interaction Paradigm for the Web. Conversations 2019: Chatbot Research and Design, Springer LNCS vol. 11970, 2020, Pages 94-110.</li>
+			</ul>
 		</div>
 
 	</div>
