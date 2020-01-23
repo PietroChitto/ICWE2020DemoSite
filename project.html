@@ -17,27 +17,41 @@
 
 
 <body>
-	
-	<div id="navigation">
-		<ul id="menu">
-			<li><a bot-intent="index_link" bot-intent-desc="go to the home page" bot-type="link" bot-keys="home, home page" href="index.html">Home</a></li>
-			<li><a href="project.html">Project progresses</a></li>
-			<li><a bot-intent="researcher_link" bot-intent-desc="tell you the some information about the researcher" bot-type="link" href="researcher.html" bot-keys="researcher, workers, contributors">About us</a></li>
-		</ul>
+
+	<div style="color:#a7a7a7">
+		Simple demo website accompanying the ICWE 2020 submission "Automatic Generation of Chatbots for Conversational Web Browsing" by Pietro Chittò, Marcos Baez and Florian Daniel.
 	</div>
 
+	<p id="navigation">
+			<a href="index.html">Home</a> |
+			<a bot-intent="progresses_link" bot-intent-desc="tell you the phases of the project" bot-type="link" bot-keys="phases, steps, progress" href="project.html?">Project progress</a> |
+			<a bot-intent="researcher_link" bot-intent-desc="tell you the some information about the researcher" bot-type="link" bot-keys="researcher, workers, contributors" href="researcher.html">About us</a>
+	</p>
+
 	<a name="phases-info">
-	<div id="container" bot-intent = "phases_info" bot-type="reader" bot-keys="phases, steps" bot-intent-desc="Tell you the step of the project">
-		<h1 bot-attribute=title>Project progresses</h1>
+	<div id="container" bot-intent = "phases_info" bot-type="reader" bot-keys="phases, steps, progress" bot-intent-desc="Tell you the steps of the project">
+		<h1 bot-attribute=title>Project progress</h1>
+		<ul>
+			<li><strong>March 2019:</strong> Start of the project</li>
+			<li><strong>April 2019:</strong> Definition of the architecture of the system</li>
+			<li><strong>July 2019:</strong> Selection of the software technologies to use for implementation</li>
+			<li><strong>September 2019:</strong> Start of the implementation phase</li>
+			<li><strong>November 2019:</strong> First prototype ready</li>
+			<li><strong>January 2020:</strong> Paper submitted to ICWE</li>
+		</ul>
+
+<!--
 		<div bot-attribute="list">
-			<p bot-attribute="list-item"><strong>March 2019:</strong> Start of the Project</p>
+			<p bot-attribute="list-item"><strong>March 2019:</strong> Start of the project</p>
 			<p bot-attribute="list-item"><strong>April 2019:</strong> Definition of the architecture of the system</p>
-			<p bot-attribute="list-item"><strong>July 2019:</strong> Definition of the softwere technologies for the implementation phase</p>
-			<p bot-attribute="list-item"><strong>September 2019:</strong> Start of implementation phase</p>
+			<p bot-attribute="list-item"><strong>July 2019:</strong> Selection of the software technologies to use for implementation</p>
+			<p bot-attribute="list-item"><strong>September 2019:</strong> Start of the implementation phase</p>
+			<p bot-attribute="list-item"><strong>November 2019:</strong> First prototype ready</p>
+			<p bot-attribute="list-item"><strong>January 2020:</strong> Paper submitted to ICWE</p>
 		</div>
 	</div>
 	</a>
-
+-->
 </body>
 
 </html>

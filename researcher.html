@@ -17,34 +17,51 @@
 
 
 <body>
-	<div id="navigation">
-		<ul id="menu" bot-element="menu">
-			<li bot-element="menu-item"><a href="index.html" bot-intent="detailed-project-description">Home</a></li>
-			<li bot-element="menu-item"><a href="project.html" bot-intent = "progress-detailed-info">Project progresses</a></li>
-			<li bot-element="menu-item"><a href="researcher.html">About us</a></li>
-		</ul>
+
+	<div style="color:#a7a7a7">
+		Simple demo website accompanying the ICWE 2020 submission "Automatic Generation of Chatbots for Conversational Web Browsing" by Pietro Chittò, Marcos Baez and Florian Daniel.
 	</div>
+
+	<p id="navigation">
+			<a href="index.html">Home</a> |
+			<a bot-intent="progresses_link" bot-intent-desc="tell you the phases of the project" bot-type="link" bot-keys="phases, steps, progress" href="project.html?">Project progress</a> |
+			<a bot-intent="researcher_link" bot-intent-desc="tell you the some information about the researcher" bot-type="link" bot-keys="researcher, workers, contributors" href="researcher.html">About us</a>
+	</p>
 
 	<div id="researchers" bot-element="list-container" bot-intent="researcher-info">
 
+		<h1 bot-attribute=title>Author bios</h1>
+
+		<p bot-element="paragraph"><strong>Florian Daniel</strong>
+			is an Associate Professor with Politecnico di Milano, Milan, Italy. His research interests include Web engineering, service-oriented computing, blockchain, business process management, and data science. He holds a Ph.D. in Information Technology from Politecnico di Milano. Contact him at florian.daniel@polimi.it.
+		</p>
+		<p bot-element="paragraph"><strong>Pietro Chittò</strong>
+		  is a M.Sc. student in Computer Sience and engineering at Politecnico di Milano. His research focuses on conversational web browsing, chatbot development and web engineering. He holds a B.Sc. in Information Technology from Politecnico di Milano. Contact him at pietro.chitto@mail.polimi.it.
+	  </p>
+		<p bot-element="paragraph"><strong>Marcos Baez</strong>
+			is a postdoctoral researcher at University of Trento, where he’s been participating in the research and development of successful wellbeing initiatives within the Lifeparticipation group. His research interests include human-computer interaction, web engineering and in general how design and engineering can be combined to make people’s life better.  Baez has a PhD in information and communication technologies from University of Trento.
+		</p>
+
+<!--
 		<div>
-			<p bot-element="list-elem"><strong>Florian Daniel:</strong><br>
-				Florian Daniel is an Associate Professor with Politecnico di Milano, Milan, Italy. His research interests include Web engineering, service-oriented computing, blockchain, business process management, and data science. He holds a Ph.D. in Information Technology from Politecnico di Milano. Contact him at florian.daniel@polimi.it.
+			<p bot-element="list-elem"><strong>Florian Daniel</strong>
+				is an Associate Professor with Politecnico di Milano, Milan, Italy. His research interests include Web engineering, service-oriented computing, blockchain, business process management, and data science. He holds a Ph.D. in Information Technology from Politecnico di Milano. Contact him at florian.daniel@polimi.it.
 			</p>
 		</div>
 
 		<div>
-			<p bot-element="list-elem"><strong>Chittò Pietro:</strong><br>
-			Student in Computer Sience and engineering at Politecnico di Milano</p>
+			<p bot-element="list-elem"><strong>Pietro Chittò</strong>
+			is a M.Sc. student in Computer Sience and engineering at Politecnico di Milano. His research focuses on conversational web browsing, chatbot development and web engineering. He holds a B.Sc. in Information Technology from Politecnico di Milano. Contact him at pietro.chitto@mail.polimi.it.</p>
 		</div>
 
 		<div>
-			<p bot-element="list-elem"><strong>Marcos Baez:</strong><br>
-				Marcos Baez is a postdoctoral researcher at University of Trento, where he’s been participating in the research and development of successful wellbeing initiatives within the Lifeparticipation group. His research interests include human-computer interaction, web engineering and in general how design and engineering can be combined to make people’s life better.  Baez has a PhD in information and communication technologies from University of Trento. 
+			<p bot-element="list-elem"><strong>Marcos Baez</strong>
+				is a postdoctoral researcher at University of Trento, where he’s been participating in the research and development of successful wellbeing initiatives within the Lifeparticipation group. His research interests include human-computer interaction, web engineering and in general how design and engineering can be combined to make people’s life better.  Baez has a PhD in information and communication technologies from University of Trento.
 			</p>
 		</div>
+-->
 	</div>
-		
+
 </body>
 
 </html>
