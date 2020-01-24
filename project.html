@@ -24,12 +24,12 @@
 
 	<p id="navigation">
 			<a href="index.html">Home</a> |
-			<a bot-intent="progresses_link" bot-intent-desc="tell you the phases of the project" bot-type="link" bot-keys="phases, steps, progress" href="project.html?">Project progress</a> |
-			<a bot-intent="researcher_link" bot-intent-desc="tell you the some information about the researcher" bot-type="link" bot-keys="researcher, workers, contributors" href="researcher.html">About us</a>
+			<a bot-intent="progress" bot-intent-desc="Tell you the phases of the project" bot-type="link" bot-keys="phases, steps, progress" href="project.html?">Project progress</a> |
+			<a bot-intent="about" bot-intent-desc="Tell you some information about the researchers involved" bot-type="link" bot-keys="researchers, authors, contributors, team members" href="researcher.html">About us</a>
 	</p>
 
 	<a name="phases-info">
-	<div id="container" bot-intent = "phases_info" bot-type="reader" bot-keys="phases, steps, progress" bot-intent-desc="Tell you the steps of the project">
+	<div id="container" bot-intent = "progress_info" bot-type="reader" bot-keys="phases, steps, progress" bot-intent-desc="Tell you the steps of the project">
 		<h1 bot-attribute=title>Project progress</h1>
 		<ul bot-attribute="list">
 			<li bot-attribute="list-item"><strong>March 2019:</strong> Start of the project</li>
