@@ -23,22 +23,23 @@
 	</div>
 
 	<p id="navigation">
-			<a href="index.html">Home</a> |
+			<a bot-intent="home" bot-intent-desc="Tell you some information about the papers" bot-type="link" bot-keys="paper, papers, article, articles" href="index.html" href="index.html">Home</a> |
 			<a bot-intent="progress" bot-intent-desc="Tell you the phases of the project" bot-type="link" bot-keys="phases, steps, progress" href="project.html?">Project progress</a> |
-			<a bot-intent="about" bot-intent-desc="Tell you some information about the researchers involved" bot-type="link" bot-keys="researchers, authors, contributors, team members" href="researcher.html">About us</a>
+			<a href="researcher.html">About us</a>
 	</p>
 
-	<div id="researchers" bot-element="list-container" bot-intent="author_bios">
+	<div id="researchers" bot-intent="author_bios">
 
 		<h1 bot-attribute=title>Author bios</h1>
-
-		<p bot-element="paragraph"><strong>Florian Daniel</strong>
+		<div bot-intent="florian_bio" bot-type="reader" bot-intent-desc="Tell you some information about Florian Daniel" bot-keys="Florian, Daniel, Florian Daniel">
+			<p bot-attribute="paragraph"><strong>Florian Daniel</strong>
 			is an Associate Professor with Politecnico di Milano, Milan, Italy. His research interests include Web engineering, service-oriented computing, blockchain, business process management, and data science. He holds a Ph.D. in Information Technology from Politecnico di Milano. Contact him at florian.daniel@polimi.it.
-		</p>
-		<p bot-element="paragraph"><strong>Pietro Chittò</strong>
+			</p>
+		</div>
+		<p bot-attribute="paragraph" bot-intent="pietro_bios" bot-type="reader" bot-intent-desc="Tell you some information about Pietro Chittò" bot-keys="Pietro, Chittò, Pietro Chittò"><strong>Pietro Chittò</strong>
 		  is a M.Sc. student in Computer Sience and engineering at Politecnico di Milano. His research focuses on conversational web browsing, chatbot development and web engineering. He holds a B.Sc. in Information Technology from Politecnico di Milano. Contact him at pietro.chitto@mail.polimi.it.
 	  </p>
-		<p bot-element="paragraph"><strong>Marcos Baez</strong>
+		<p bot-attribute="paragraph" bot-intent="marcos_bio" bot-type="reader" bot-intent-desc="Tell you some information about Marcos Baez" bot-keys="Marcos, Baez, Marcos Baez"><strong>Marcos Baez</strong>
 			is a postdoctoral researcher at University of Trento, where he’s been participating in the research and development of successful wellbeing initiatives within the Lifeparticipation group. His research interests include human-computer interaction, web engineering and in general how design and engineering can be combined to make people’s life better.  Baez has a PhD in information and communication technologies from University of Trento.
 		</p>
 
