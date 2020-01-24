@@ -18,12 +18,13 @@
     
       <!-- Navigation bar -->
     <div class="container" style="background-color: white; min-height: 100vh">
+        
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container">
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" bot-intent="home" bot-intent-desc="Tell you some information about the papers" bot-type="link" bot-keys="paper, papers, article, articles" href="index.html" href="index.html">Home</a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Progress
@@ -31,7 +32,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="researcher.html">About us</a>
+                  <a class="nav-link" bot-intent="about" bot-intent-desc="Tell you some information about the researchers involved" bot-type="link" bot-keys="researchers, authors, contributors, team members" href="researcher.html">About us</a>
                 </li>
               </ul>
             </div>
@@ -40,16 +41,16 @@
 
         <!-- Portfolio Item Row -->
  
-        <div class="container">
-          <h3 class="my-3">Project Progress</h3>
+        <div class="container" bot-intent = "progress_info" bot-type="reader" bot-keys="phases, steps, progress" bot-intent-desc="Tell you the steps of the project">
+          <h3 class="my-3" bot-attribute="title">Project Progress</h3>
           
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong>March 2019:</strong> Start of the project</li>
-            <li class="list-group-item"><strong>April 2019:</strong> Definition of the architecture of the system</li>
-            <li class="list-group-item"><strong>July 2019:</strong> Selection of the software technologies to use for implementation</li>
-            <li class="list-group-item"><strong>September 2019:</strong> Start of the implementation phase</li>
-            <li class="list-group-item"><strong>November 2019:</strong> First prototype ready</li>
-            <li class="list-group-item"><strong>January 2020:</strong> Paper submitted to ICWE</li>
+          <ul class="list-group list-group-flush" bot-attribute="list">
+            <li class="list-group-item" bot-attribute="list-item"><strong>March 2019:</strong> Start of the project</li>
+            <li class="list-group-item" bot-attribute="list-item"><strong>April 2019:</strong> Definition of the architecture of the system</li>
+            <li class="list-group-item" bot-attribute="list-item"><strong>July 2019:</strong> Selection of the software technologies to use for implementation</li>
+            <li class="list-group-item" bot-attribute="list-item"><strong>September 2019:</strong> Start of the implementation phase</li>
+            <li class="list-group-item" bot-attribute="list-item"><strong>November 2019:</strong> First prototype ready</li>
+            <li class="list-group-item" bot-attribute="list-item"><strong>January 2020:</strong> Paper submitted to ICWE</li>
           </ul>      
         
     

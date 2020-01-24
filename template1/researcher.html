@@ -24,10 +24,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" bot-intent="home" bot-intent-desc="Tell you some information about the papers" bot-type="link" bot-keys="paper, papers, article, articles" href="index.html" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="project.html">Progress
+                  <a class="nav-link" bot-intent="progress" bot-intent-desc="Tell you the phases of the project" bot-type="link" bot-keys="phases, steps, progress" href="project.html">Progress
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
@@ -43,33 +43,33 @@
  
         <h1 class="my-3 text-center">Author bios</h1>
         
-        <div class="row">
+        <div class="row" bot-intent="author_bios" bot-intent-desc="Tell you some information about the authors" bot-keys="researchers, authors, contributors, team members">
       
-            <div class="col">
-              <div class="circle-img img-circle mx-auto d-block">
+            <div class="col" bot-intent="florian_bio" bot-type="reader" bot-intent-desc="Tell you some information about Florian Daniel" bot-keys="Florian, Daniel, Florian Daniel">
+                <div class="circle-img img-circle mx-auto d-block">
                     <img src="https://www.floriandaniel.it/img/flosydney.jpg" >              
-              </div>
-              <h4 class="my-3">Florian Daniel</h4>
-              <p class="text-justify">Florian Daniel is an Associate Professor with Politecnico di Milano, Milan, Italy. His research interests include Web engineering, service-oriented computing, blockchain, business process management, and data science. He holds a Ph.D. in Information Technology from Politecnico di Milano. Contact him at florian.daniel@polimi.it.
+                </div>
+                <h4 class="my-3" bot-attribute="title">Florian Daniel</h4>
+                <p class="text-justify" bot-attribute="paragraph">Florian Daniel is an Associate Professor with Politecnico di Milano, Milan, Italy. His research interests include Web engineering, service-oriented computing, blockchain, business process management, and data science. He holds a Ph.D. in Information Technology from Politecnico di Milano. Contact him at florian.daniel@polimi.it.
                 
-              </p>
+                </p>
             </div>
         
       
-            <div class="col">
+            <div class="col" bot-intent="marcos_bio" bot-type="reader" bot-intent-desc="Tell you some information about Marcos Baez" bot-keys="Marcos, Baez, Marcos Baez">
                 <div class="circle-img img-circle mx-auto d-block">
                     <img src="https://media-exp1.licdn.com/dms/image/C5603AQEr3uIwMCeDWA/profile-displayphoto-shrink_200_200/0?e=1585180800&v=beta&t=bQttd5WGP35tdZlkmA7oDIReFIvpHigLmCJlkbgesYQ" >              
                 </div>
-              <h4 class="my-3">Marcos Baez</h4>
-              <p class="text-justify">Marcos Baez is a postdoctoral researcher at University of Trento, where he’s been participating in the research and development of successful wellbeing initiatives within the Lifeparticipation group. His research interests include human-computer interaction, web engineering and in general how design and engineering can be combined to make people’s life better. Baez has a PhD in information and communication technologies from University of Trento. </p>
+                <h4 class="my-3" bot-attribute="title">Marcos Baez</h4>
+                <p class="text-justify" bot-attribute="paragraph">Marcos Baez is a postdoctoral researcher at University of Trento, where he’s been participating in the research and development of successful wellbeing initiatives within the Lifeparticipation group. His research interests include human-computer interaction, web engineering and in general how design and engineering can be combined to make people’s life better. Baez has a PhD in information and communication technologies from University of Trento. </p>
             </div>
 
-            <div class="col">
+            <div class="col" bot-intent="pietro_bios" bot-type="reader" bot-intent-desc="Tell you some information about Pietro Chittò" bot-keys="Pietro, Chittò, Pietro Chittò">
                 <div class="circle-img img-circle mx-auto d-block">
                     <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGQVWE7Boydew/profile-displayphoto-shrink_200_200/0?e=1585180800&v=beta&t=joSRPm4rGD6Jrq7naaVpOq9hK3iupJXDuFgXFClnKxg" >              
-              </div>
-                <h4 class="my-3">Pietro Chittò</h4>
-                <p class="text-justify">Pietro Chittò is a M.Sc. student in Computer Sience and engineering at Politecnico di Milano. His research focuses on conversational web browsing, chatbot development and web engineering. He holds a B.Sc. in Information Technology from Politecnico di Milano. Contact him at pietro.chitto@mail.polimi.it. </p>
+                </div>
+                <h4 class="my-3" bot-attribute="title">Pietro Chittò</h4>
+                <p class="text-justify" bot-attribute="paragraph">Pietro Chittò is a M.Sc. student in Computer Sience and engineering at Politecnico di Milano. His research focuses on conversational web browsing, chatbot development and web engineering. He holds a B.Sc. in Information Technology from Politecnico di Milano. Contact him at pietro.chitto@mail.polimi.it. </p>
               </div>
             
         

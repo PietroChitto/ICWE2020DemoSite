@@ -15,10 +15,9 @@
 <body style="background-color: rgba(245, 222, 179, 0.37);">
 
 
-  <div class="container" style="background-color: white; min-height: 100vh; margin-top: 0px;">
+  <div class="container" style="background-color: white; min-height: 100vh;">
 
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="margin-bottom: 0px;">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
@@ -28,67 +27,69 @@
                     </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="project.html">Progress</a>
+                <a bot-intent="progress" bot-intent-desc="Tell you the phases of the project" bot-type="link" bot-keys="phases, steps, progress" class="nav-link" href="project.html">Progress</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="researcher.html">About us</a>
+                <a bot-intent="about" bot-intent-desc="Tell you some information about the researchers involved" bot-type="link" bot-keys="researchers, authors, contributors, team members" class="nav-link" href="researcher.html">About us</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      </div>
     
-    <h1 class="my-4">Latest Paper</h1>
-    <div>
-    <h2 class="my-4">Title: Automatic Generation of Chatbots for Conversational Web Browsing
-    </h2>
+    <div bot-intent="lastest_paper" bot-intent-desc="Tell you information about the paper" bot-keys="lastest paper, last paper, paper">
+      <h1 class="my-4">Latest Paper</h1>
 
-    <div class="row">
-      
-      <div class="col-md-8">
-        <h3 class="my-3">Abstract</h3>
-        <p class="text-justify">This paper introduces what we call conversational web browsing, i.e., a dialog-based, natural language interaction with websites. The goal is to enable users to access content and functionality accessible through rendered UIs by ``talking to websites'' instead of by operating 
-the graphical UI using keyboard and mouse. In this paper, we describe the foundations of our approach 
-and show how to generate a chatbot out of a website equipped with simple, bot-specific HTML annotations. 
-The chatbot mediates between the user and the website, operates its graphical UI on behalf of the user, and 
-informs the user about the state of interaction. We describe the annotation format, the supporting conversational 
-middleware, and the implementation of a demo able to deliver conversational web browsing experiences through Amazon 
-           Alexa.
-        </p>
+      <div bot-intent="paper_info_title" bot-type="reader" bot-intent-desc="Tell you the title of the paper" bot-keys="title">   
+        <h3 bot-attribute="title" class="my-4">Title of paper</h3>
+        <p bot-attribute="paragraph">Automatic Generation of Chatbots for Conversational Web Browsing</p>
       </div>
-  
 
-      <div class="col-md-4">
-        <h3 class="my-3">Project topics</h3>
-        <ul class="">
-          <li>Non-visual browsing</li>
-          <li>Conversational agents</li>
-          <li>Chatbot generation</li>
-          <li>Hierarchical chatbots</li>
-        </ul>
-      </div>
+      <div class="row">
+        
+        <div class="col-md-8" bot-intent="paper_info_abstract" bot-type="reader" bot-intent-desc="Tell you a summary of the paper" bot-keys="abstract, summary">
+          <h3 class="my-3" bot-attribute="title">Abstract</h3>
+          <p class="text-justify" bot-attribute="paragraph">This paper introduces what we call conversational web browsing, i.e., a dialog-based, natural language interaction with websites. The goal is to enable users to access content and functionality accessible through rendered UIs by ``talking to websites'' instead of by operating 
+          the graphical UI using keyboard and mouse. In this paper, we describe the foundations of our approach 
+          and show how to generate a chatbot out of a website equipped with simple, bot-specific HTML annotations. 
+          The chatbot mediates between the user and the website, operates its graphical UI on behalf of the user, and 
+          informs the user about the state of interaction. We describe the annotation format, the supporting conversational 
+          middleware, and the implementation of a demo able to deliver conversational web browsing experiences through Amazon 
+            Alexa.
+          </p>
+        </div>
+
+        <div class="col-md-4" bot-intent="paper_info_topics" bot-type="reader" bot-intent-desc="Tell you the topics of the paper" bot-keys="topics">
+          <h3 class="my-3" bot-attribute="title">Project topics</h3>
+          <ul bot-attribute="paragraph">
+            <li>Non-visual browsing</li>
+            <li>Conversational agents</li>
+            <li>Chatbot generation</li>
+            <li>Hierarchical chatbots</li>
+          </ul>
+        </div>
+        
       
-    
-    </div>
-    </div>
-
-
+      </div>
     <!-- /.row -->
-    <h1 class="my-3">List of Papers</h1>
-    <div>
-    <div class="row">
-      <div class="col">
-          <p>P. Chittò, M. Baez, F. Daniel. Automatic Generation of Chatbots for Conversational Web Browsing. Submitted to ICWE 2020.</p>
-      </div>
     </div>
 
-    <div class="row">
-      <div class="col">
-        <p>M. Baez, F. Daniel, F. Casati. Conversational Web Interaction: Proposal of a Dialog-Based Natural Language Interaction Paradigm for the Web. Conversations 2019: Chatbot Research and Design, Springer LNCS vol. 11970, 2020, Pages 94-110.</p>
+    <div bot-intent="paper_list"  bot-type="reader" bot-intent-desc="Tell you the list of papers published by the project" bot-keys="papers, list of papers, publications, list of publications">
+      <h1 class="my-3" bot-attribute="title">List of Papers</h1>
+      <div bot-attribute="list">
+        <div class="row">
+          <div class="col">
+            <p bot-attribute="list-item">P. Chittò, M. Baez, F. Daniel. Automatic Generation of Chatbots for Conversational Web Browsing. Submitted to ICWE 2020.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <p bot-attribute="list-item">M. Baez, F. Daniel, F. Casati. Conversational Web Interaction: Proposal of a Dialog-Based Natural Language Interaction Paradigm for the Web. Conversations 2019: Chatbot Research and Design, Springer LNCS vol. 11970, 2020, Pages 94-110.</p>
+          </div>
+        </div>
       </div>
     </div>
-
     
   </div>
   
